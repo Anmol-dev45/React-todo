@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --light-200: hsl(0, 0%, 98%);
+  --light-100: hsl(236, 33%, 92%);
+  --light-400: hsl(233, 11%, 84%);
+  --light-700: hsl(236, 9%, 61%);
+  --light-900: hsl(235, 19%, 35%);
+
+  --dark-900: hsl(235, 21%, 11%);
+  --dark-800: hsl(235, 24%, 19%);
+  --dark-200: hsl(234, 39%, 85%);
+  --dark-100: hsl(236, 33%, 92%);
+  --dark-400: hsl(234, 11%, 52%);
+  --dark-600: hsl(233, 14%, 35%);
+  --dark-700: hsl(237, 14%, 26%);
+  --ls: .5em;
+
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html,
+body {
+  font-size: 18px;
+}
+
+
+.bg-light-100 {
+  background-color: var(--light-100);
+}
+
+.text-light-900 {
+  color: var(--light-900);
+}
+
+.text-light-700 {
+  color: var(--light-700);
+}
+
+.bg-light-200 {
+  background-color: var(--light-200);
+}
+
+.bg-dark-800 {
+  background-color: var(--dark-800);
+}
+
+.bg-dark-900 {
+  background-color: var(--dark-900);
+}
+
+.text-dark-100 {
+  color: var(--dark-100);
+}
+
+.text-dark-200 {
+  color: var(--dark-200);
+}
+
+.border-light {
+  border-color: var(--light-400);
+}
+
+.border-dark {
+  border-color: var(--dark-400);
+}
+
+
+.custom-ls {
+  letter-spacing: var(--ls);
+}
