@@ -32,9 +32,18 @@ body {
 }
 
 
+.bg-check {
+  background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
 .bg-light-100 {
   background-color: var(--light-100);
 }
+
+.text-light-200 {
+  color: var(--light-200);
+}
+
 
 .text-light-900 {
   color: var(--light-900);
@@ -56,12 +65,16 @@ body {
   background-color: var(--dark-900);
 }
 
+.text-dark-900 {
+  color: var(--dark-900);
+}
+
 .text-dark-100 {
   color: var(--dark-100);
 }
 
 .text-dark-200 {
-  color: var(--dark-200);
+  color: var(--dark-400);
 }
 
 .border-light {

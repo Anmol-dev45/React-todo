@@ -50,6 +50,7 @@ function App() {
     if (inputValue.trim()) {
       const newTodo = { id: uuidv4(), title: inputValue, completed: checked }
       setTodos([...todos, newTodo])
+      
       setInputValue('')
     }
 
@@ -60,10 +61,10 @@ function App() {
   }
 
   return (
-    <div className={`${darkMode ? "bg-dark-900" : "bg-light-100"} h-screen grid `}>
+    <div className={`${darkMode ? "bg-dark-900" : "bg-light-100"} h-screen flex jutify-center`}>
       <img src={darkBg} className="absolute z-10" alt="" />
 
-      <main className='w-96 mx-auto my-auto grid z-20'>
+      <main className='w-96 mx-auto mt-12 flex flex-col z-20'>
 
         <Header darkMode={darkMode} handleTheme={handleTheme}></Header>
         <Search darkMode={darkMode} checked={checked} handleCheck={handleCheck} handleChange={handleChange} inputValue={inputValue} handleSubmit={handleSubmit}></Search>
